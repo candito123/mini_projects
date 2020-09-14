@@ -1,0 +1,96 @@
+{% load static %}
+{# option f to end of word after auto incomplete #}
+
+<html>
+    <!--loader-->
+    <span class="align-center veil z-index-5">
+        <span class="loader z-index-5">
+            <span class="loader-inner z-index-5">
+            </span>
+        </span>
+    </span>
+
+
+    <div>
+        <div class="header border-bottom-timberwolf darkForest">
+                <title>title</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="{% static "styles.css" %}">
+            <h2>Luke Yoo</h2>
+            <p>Welcome. This is my personal archieve.</p>
+        </div>
+        <div id="navbar" class="border-bottom-timberwolf">
+            <button class="button darkForest hide-large" onclick="barOpen()">&#9776;</button>
+            <a id="toHome" href="{% url 'home' %}">Home</a>
+            <a id="toProjects" href="{% url 'projects' %}">Projects</a>
+            <a id="toSkills" href="{% url 'skills' %}">Skills</a>
+        </div>
+        <!-- header+navbar is seperated from body -->
+        <body>
+            <!-- sidebar below -->
+            <div class="sidebar bar-block collapse card animate-left darkForest" style="width:200px;" id="sidebar"> {# onmouseout="mouseOutSidebar()" onmouseover="mouseOverSidebar()" #}
+                <button class="bar-item button large hide-large" onclick="barClose()">Close &times;</button>
+                    {% block sidebar_items %}
+                    <a href="#" class="bar-item button darkForest
+                        light-up-if-same-name" onmouseout="mouseOutItem(this)" onmouseover="mouseOverItem(this)">Link 1</a>
+                    <a href="#" class="bar-item button darkForest
+                        light-up-if-same-name" onmouseout="mouseOutItem(this)" onmouseover="mouseOverItem(this)">Link 2</a>
+                    <a href="#" class="bar-item button darkForest
+                        light-up-if-same-name" onmouseout="mouseOutItem(this)" onmouseover="mouseOverItem(this)">Link 3</a>
+                    <a href="#" class="bar-item button darkForest
+                        light-up-if-same-name" onmouseout="mouseOutItem(this)" onmouseover="mouseOverItem(this)">Link 1</a>
+                    <a href="#" class="bar-item button darkForest
+                        light-up-if-same-name" onmouseout="mouseOutItem(this)" onmouseover="mouseOverItem(this)">Link 1</a>
+                    <a href="#" class="bar-item button darkForest
+                        light-up-if-same-name" onmouseout="mouseOutItem(this)" onmouseover="mouseOverItem(this)">Link 2</a>
+                    <a href="#" class="bar-item button darkForest
+                        light-up-if-same-name" onmouseout="mouseOutItem(this)" onmouseover="mouseOverItem(this)">Link 3</a>
+                    <a href="#" class="bar-item button darkForest
+                        light-up-if-same-name" onmouseout="mouseOutItem(this)" onmouseover="mouseOverItem(this)">Link 4</a>
+
+                <!-- acc in sidebar below -->
+                <button class="button block left-align darkForest" onclick="getAccSidebar()">
+                project name <i class="fa fa-caret-down"></i>
+                </button>
+                <!-- acc panel -->
+                    <div id="accSidebar" class="hide CharlestonGreen card">
+                        <a href="#" class="bar-item button">Link</a>
+                        <a href="#" class="bar-item button">Link</a>
+                        <a href="#" class="bar-item button">Link</a>
+                        <a href="#" class="bar-item button">Link</a>
+                        <a href="#" class="bar-item button">Link</a>
+                        <a href="#" class="bar-item button">Link</a>
+                    </div>
+                {% endblock %}
+            </div>
+            <!-- main(non-sidebar) starts below -->
+        <main>
+                {% block container %}
+                <div class="main darkForest" style="margin-left:200px">
+                    <div class="border-bottom-timberwolf">
+                        <div class="container">
+                            <h1>Project Name</h1>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h3>Date, Category, Used Skills</h3>
+                        <!-- acc+panel 1 -->
+                        <!-- acc+panel 2 -->
+                        <!-- acc+panel 3 -->
+                        <!-- acc+panel 4 -->
+                        <!-- acc+panel 5 -->
+                        <!-- ... -->
+                        <!-- p tags -->
+                        {% endblock %}
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <a href="#" class="go-up">&#x25B2;</a>
+
+        <!-- core.js below -->
+            <script src="{% static "core.js" %}"></script>
+        </body>
+    </div>
+</html>
