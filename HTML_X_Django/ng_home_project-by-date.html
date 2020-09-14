@@ -1,0 +1,49 @@
+{% extends "super_base.html" %}
+{% load static %}
+
+{% block sidebar_items %}
+    <a href="{% url 'home'%}" class="bar-item button">My</a>
+    <a href="{% url 'stats'%}" class="bar-item button">Stats</a>
+    <a href="{% url 'projects_by_date'%}" class="bar-item button">Projects by date</a>
+{% endblock %}
+
+{% block container %}
+<div class="main darkForest" style="margin-left:200px">
+    <div class="border-bottom-timberwolf">
+        <div class="container">
+            <h1>Projects by date</h1>
+        </div>
+    </div>
+    <div class="container">
+        <h3>Total number of projects:&nbsp{{tot_num_prjs}}</h3>
+    </div>
+        <div class="container border-bottom-top-timberwolf">
+            {% for prj in sorted_prjs %}
+                <a href="{% url 'projects' prj.id %}">
+                    <h3>{{prj.name}}<h3>
+                </a>
+                    <div class="small">&nbsp&nbsp{{prj.date}}</div>
+            {% endfor %}
+        </div>
+    <div class="container">
+        <h4>Total number of mini projects:&nbsp{{sorted_mini_prjs.count}}</h4>
+    </div>
+        <div class="container border-bottom-top-timberwolf">
+            {% for prj in sorted_mini_prjs %}
+                <a href="{% url 'projects' prj.id %}">
+                    <h3>{{prj.name}}<h3>
+                </a>
+                    <div class="small">&nbsp&nbsp{{prj.date}}</div>
+            {% endfor %}
+        </div>
+
+    <div class="vertial-filler">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <script>
+        document.getElementById("toHome").classList.add("active");
+    </script>
+
+{% endblock %}
