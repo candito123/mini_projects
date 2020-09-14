@@ -1,0 +1,201 @@
+{% extends "super_base.html" %}
+{% load static %}
+
+
+
+
+{% block sidebar_items %}
+    {% for category in categories_that_have_prj_not_mini %}
+            <!-- acc in sidebar below -->
+            <button class="button block left-align darkForest" onclick="getAccSidebar_{{ category.id }}()">
+                {{ category.name }} <i class="fa fa-caret-down"></i>
+            </button>
+                <!-- acc panel -->
+                <div id="accSidebar_{{ category.id }}" class="hide CharlestonGreen card">
+                    {# mini_project can not be displayed in prj app wihout going through skill app #}
+                    {% for prj in category.project_set.all %}
+                        {% if prj.is_mini == False %}
+                            <a href="{% url 'projects' prj.id %}" class="bar-item button
+                                light-up-if-same-name" onmouseout="mouseOutItem(this)" onmouseover="mouseOverItem(this)">
+                                {{ prj.name }}
+                            </a>
+                        {% endif %}
+                    {% endfor %}
+                    <script>
+                    //dynamically generated acc sidebar control due to the id
+                    function getAccSidebar_{{ category.id }}() {
+                        var x = document.getElementById("accSidebar_{{ category.id }}");
+
+                        if (x.className.indexOf("show") == -1) {
+                                x.className += " show";
+                                x.previousElementSibling.className += " green";
+                        } else {
+                                x.className = x.className.replace(" show", "");
+                                x.previousElementSibling.className =
+                                x.previousElementSibling.className.replace(" green", "");
+                            }
+                    }
+                    </script>
+                </div>
+    {% endfor %}
+{% endblock %}
+
+
+{% block container %}
+    <div class="main darkForest" style="margin-left:200px">
+        <div class="border-bottom-timberwolf">
+            <div class="container">
+                <h1>{{project.name|capfirst}}</h1>
+
+                <h5>{{ project.date }}</h5>
+                <h4>{% for category in categories %}
+                        {{ category.name }}
+                    {% endfor %}
+
+                    {% for used_skill in used_skills %}
+                        {{ used_skill.name }}
+                    {% endfor %}
+                </h4>
+            </div>
+        </div>
+
+            <!-- acc -->
+            <button class="button block left-align darkForest border-bottom-timberwolf" onclick="getAcc1()">
+            Motivation <i class="fa fa-caret-down"></i>
+            </button>
+                <!-- panel -->
+                <div id="acc1" class="hide CharlestonGreen card">
+                    <div class= "container">
+                        <p>
+                            {{ project.motivation }}
+                        </p>
+                    </div>
+                </div>
+
+            <!-- acc -->
+            <button class="button block left-align darkForest border-bottom-timberwolf" onclick="getAcc2()">
+            Elaboration <i class="fa fa-caret-down"></i>
+            </button>
+                <!-- panel -->
+                <div id="acc2" class="hide CharlestonGreen card">
+                    <div class= "container">
+                        <p>
+                            {{project.elaboration}}
+                        </p>
+                    </div>
+                </div>
+
+            <!-- acc -->
+            {% if embeddeds %}
+                    <button class="button block left-align darkForest border-bottom-timberwolf margin-top" onclick="getAcc3()">
+                    Videos <i class="fa fa-caret-down"></i>
+                    </button>
+                        <!-- panel -->
+                        <div id="acc3" class="hide CharlestonGreen card">
+                {% for i in embeddeds %}
+                        <button id="modalBtn_{{ i.id }}" class="button-round darkForest-reverse">{{ i.name }}</button>
+                            <!-- The Modal -->
+                            <div id="modal_{{ i.id }}" class="modal">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <!-- Modal content content-->
+                                    <span class="close">&times &nbsp </span>
+                                        {{ i.embedded|safe|escape }}
+                                    <!-- <iframe class="video" src="https://www.youtube.com/embed/a6Q8Na575qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                                    {# <iframe class="video" src="https://www.youtube.com/embed/lLLBhIJbVFs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> #}
+                                    </div>
+                            </div>
+                            <script>
+                                // This span to close the modal (works in general)
+                                var span = document.querySelector("#modal_{{ i.id }} .close");
+                                // open the modal (id 1) and expand the content size
+                                (document.getElementById("modalBtn_{{ i.id }}")).onclick = function() {
+                                    (document.getElementById("modal_{{ i.id }}")).style.display = "block";
+                                    (document.querySelector("#modal_{{ i.id }} .modal-content")).style.height = "80%";
+                                    (document.querySelector("#modal_{{ i.id }} .modal-content")).style.textAlign = "center";
+                                    (document.querySelector("#modal_{{ i.id }} iframe")).style.marginTop = "5px";
+                                    (document.querySelector("#modal_{{ i.id }} iframe")).style.height = "100%";
+                                    (document.querySelector("#modal_{{ i.id }} iframe")).style.width = "100%";
+                                }
+                                // close the modal by click button
+                                    span.onclick = function() {
+                                    (document.getElementById("modal_{{ i.id }}")).style.display = "none";
+                                }
+                                // close the modal by outside click
+                                window.onclick = function(event) {
+                                    if (event.target == (document.getElementById("modal_{{ i.id }}"))) {
+                                        (document.getElementById("modal_{{ i.id }}")).style.display = "none";
+                                    }
+                                }
+                            </script>
+                {% endfor %}
+                        </div>
+            {% endif %}
+
+            {% if photos %}
+                <!-- acc -->
+                <button class="button block left-align darkForest border-bottom-timberwolf margin-top" onclick="getAcc4()">
+                    Photos <i class="fa fa-caret-down"></i>
+                </button>
+                    <!-- panel -->
+                    <div id="acc4" class="hide CharlestonGreen card">
+                        {% for i in photos %}
+                        {# this path would be changed in accordance to the production #}
+                            <img class="image" src={{i.photo.url}}>
+                        {% endfor %}
+                    </div>
+            {% endif %}
+
+            {% if links %}
+                <!-- acc -->
+                <button class="button block left-align darkForest border-bottom-timberwolf margin-top" onclick="getAcc5()">
+                    Links <i class="fa fa-caret-down"></i>
+                </button>
+                    <!-- panel -->
+                    <div id="acc5" class="hide CharlestonGreen card">
+                        {% for i in links %}
+                        <a href="{{ i.link }}" class="bar-item button">{{ i.name }}</a>
+                        {% endfor %}
+                    </div>
+            {% endif %}
+            {% if codes %}
+            <!-- acc -->
+                <button class="button block left-align darkForest border-bottom-timberwolf margin-top" onclick="getAcc6()">
+                Code <i class="fa fa-caret-down"></i>
+                </button>
+                    <!-- panel -->
+                    <div id="acc6" class="hide CharlestonGreen card">
+                        {% for i in codes %}
+                        <div class= "container">
+                            <pre><code class="code">{{i.code}}</code></pre>
+                            {% endfor %}
+                        </div>
+                    </div>
+            {% endif %}
+            {% if files %}
+            <!-- acc -->
+            <button class="button block left-align darkForest border-bottom-timberwolf margin-top" onclick="getAcc7()">
+            Files <i class="fa fa-caret-down"></i>
+            </button>
+                <!-- panel -->
+                <div id="acc7" class="hide CharlestonGreen card">
+                    {% for i in files %}
+                        {# The url and naming trick would be changed in accordance to production #}
+                        <a href="{{i.file.url}}" class="bar-item button">{{ i.file.name|cut:"files/"}}</a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+
+
+        <script>
+            document.getElementById("toProjects").classList.add("active");
+        </script>
+
+    </div>
+
+    <div class="vertial-filler">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+{% endblock %}
