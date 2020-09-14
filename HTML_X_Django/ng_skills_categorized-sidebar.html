@@ -1,0 +1,30 @@
+{% for category in category_that_has_skill %}
+        <!-- acc in sidebar below -->
+        <button class="button block left-align darkForest" onclick="getAccSidebar_{{ category.id }}()">
+            {{ category.name }} <i class="fa fa-caret-down"></i>
+        </button>
+            <!-- acc panel -->
+            <div id="accSidebar_{{ category.id }}" class="hide CharlestonGreen card">
+                {% for ski in category.skill_set.all %}
+                        <a href="{% url 'skills' ski.id %}" class="bar-item button
+                            light-up-if-same-name" onmouseout="mouseOutItem(this)" onmouseover="mouseOverItem(this)">
+                            {{ ski.name }}
+                        </a>
+                {% endfor %}
+                <script>
+                //dynamically generated acc sidebar control due to the id
+                function getAccSidebar_{{ category.id }}() {
+                    var x = document.getElementById("accSidebar_{{ category.id }}");
+
+                    if (x.className.indexOf("show") == -1) {
+                            x.className += " show";
+                            x.previousElementSibling.className += " green";
+                    } else {
+                            x.className = x.className.replace(" show", "");
+                            x.previousElementSibling.className =
+                            x.previousElementSibling.className.replace(" green", "");
+                        }
+                }
+                </script>
+            </div>
+{% endfor %}
