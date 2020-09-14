@@ -1,0 +1,102 @@
+{% extends "super_base.html" %}
+{% load static %}
+
+{% block sidebar_items %}
+            <!-- non acc item -->
+            <a href="{% url 'skills_whole'%}" class="bar-item button">
+                entire skills
+            </a>
+    {% for category in category_that_has_skill %}
+            <button class="button block left-align darkForest" onclick="getAccSidebar_{{ category.id }}()">
+                {{ category.name }} <i class="fa fa-caret-down"></i>
+            </button>
+                <!-- acc panel -->
+                <div id="accSidebar_{{ category.id }}" class="hide CharlestonGreen card">
+                    {% for ski in category.skill_set.all %}
+                            <a href="{% url 'skills' ski.id %}" class="bar-item button
+                                light-up-if-same-name" onmouseout="mouseOutItem(this)" onmouseover="mouseOverItem(this)">
+                                {{ ski.name }}
+                            </a>
+                    {% endfor %}
+                    <script>
+                    //dynamically generated acc sidebar control due to the id
+                    function getAccSidebar_{{ category.id }}() {
+                        var x = document.getElementById("accSidebar_{{ category.id }}");
+
+                        if (x.className.indexOf("show") == -1) {
+                                x.className += " show";
+                                x.previousElementSibling.className += " green";
+                        } else {
+                                x.className = x.className.replace(" show", "");
+                                x.previousElementSibling.className =
+                                x.previousElementSibling.className.replace(" green", "");
+                            }
+                    }
+                    </script>
+                </div>
+    {% endfor %}
+{% endblock %}
+
+{% block container %}
+    <div class="main darkForest" style="margin-left:200px">
+        <div class="border-bottom-timberwolf">
+            <div class="container">
+                <h1>{{skill.name|capfirst}}
+                    <div class="tiny right margin-right-10">To have a (technical) skill, it requires at least:
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            1. one relavant college course or a course-like material such as a series of a video.
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            2. one mini project, which is small-scale, introductory, or a part of a complete project.
+                    </div>
+                </h1>
+            </div>
+        </div>
+        <div class="container border-bottom-timberwolf">
+            <h4>{% for category in categories %}
+                    {{ category.name }}
+                {% endfor %}
+
+                {% for used_skill in used_skills %}
+                    {{ used_skill.name }}
+                {% endfor %}
+            </h4>
+                <div>
+                    <p>
+                        Course(s):
+                        {{skill.course}}
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        Mini project(s):
+                        {% for prj in projects_under_current_skill %}
+                            {% if prj.is_mini %}
+                                <a href="{% url 'projects' prj.id %}">{{ prj.name }}&nbsp</a>
+                            {% endif %}
+                        {% endfor %}
+                    </p>
+                    <p>
+                        Project(s):
+                        {% for prj in projects_under_current_skill %}
+                            {% if not prj.is_mini %}
+                                <a href="{% url 'projects' prj.id %}">{{ prj.name }}&nbsp</a>
+                            {% endif %}
+                        {% endfor %}
+                    </p>
+                </div>
+            </div>
+
+            <script>
+                document.getElementById("toSkills").classList.add("active");
+            </script>
+
+
+        </div>
+
+        <div class="vertial-filler">
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+
+{% endblock %}
