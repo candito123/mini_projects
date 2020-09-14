@@ -1,0 +1,43 @@
+{% extends "super_base.html" %}
+{% load static %}
+
+{% block sidebar_items %}
+    <a href="{% url 'home'%}" class="bar-item button">My</a>
+    <a href="{% url 'stats'%}" class="bar-item button">Stats</a>
+    <a href="{% url 'projects_by_date'%}" class="bar-item button">Projects by date</a>
+{% endblock %}
+
+{% block container %}
+<div class="main darkForest" style="margin-left:200px">
+    <div class="border-bottom-timberwolf">
+        <div class="container">
+            <h1>My</h1>
+        </div>
+    </div>
+    <div class="container border-bottom-timberwolf">
+        <h3>Current Location:<h3>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423283.43556325324!2d-118.69192680305416!3d34.020730495228584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1599426180822!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+        <h3>Current School:<h3>
+            <div>
+                <img src="{% static "images/ucla_engr_logo.png" %}" class="max-width-500px">
+            </div>
+
+        <h3>Current Email:&nbsp<div class="small">lukeyoo@g.ucla.edu</div><h3>
+
+        </div>
+
+    </div>
+
+    <div class="vertial-filler">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <script>
+        document.getElementById("toHome").classList.add("active");
+    </script>
+
+{% endblock %}
