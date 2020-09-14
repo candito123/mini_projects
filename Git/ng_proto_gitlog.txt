@@ -1,0 +1,616 @@
+commit ace6a3f0354b0f90fb80b0b83122442db4cfb8dc
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 23:16:03 2020 -0700
+
+    Cookie Settings to all none
+
+commit 54bf203efb5f11a041179b3228658b675a0f0a67
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 23:03:23 2020 -0700
+
+    Remove Some Fonts
+
+commit 70d4ef1a11ee31d323656a940362298ad293194c
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 22:34:08 2020 -0700
+
+    Add upward fixed button
+
+commit c69eb7e8769ad509cb2da84ffe2ec6975e23c12f
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 22:07:29 2020 -0700
+
+    Change minor style in prj by data
+
+commit 404db40999b84c4f3f2cead43fd91a0ea10b0e6e
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 22:00:15 2020 -0700
+
+    Fix the tot num prj to exclude mini prj
+
+commit ee9c4abda621f951d098d3745df74d3b1651b464
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 21:56:31 2020 -0700
+
+    Add project_by_date draft
+
+commit 9e88d280dd8939f7eeba6e4118674ec7b5c65d89
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 21:23:17 2020 -0700
+
+    Add email in home
+
+commit bc2b80726b73ac591ab20fd3e5d1237ef2cb6ab8
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 20:30:19 2020 -0700
+
+    Change name data_stats to stats
+
+commit 687b18abd89bf20bba1419d8ba26268ef661c0e9
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 20:23:25 2020 -0700
+
+    Add details for data_stat view
+
+commit 533069db7df2fd0c835da7eabb53fb2f2f459fa7
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 18:21:21 2020 -0700
+
+    Make pie charts to display in template
+
+commit abf6824980320aff257efbc56ebc7621f0aba418
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 16:37:28 2020 -0700
+
+    Add draft of data_stats and settings
+
+commit f3cd566e7269bb31695053bf35ff1ecf689cda94
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 14:41:09 2020 -0700
+
+    Add ucla pic and the style
+
+commit 0b133e46ab79f15e463dbece7875a15478248468
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 14:40:43 2020 -0700
+
+    Add data_stat page
+
+commit 1c0657750416831c1c00c711d45060e34d3553d2
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 14:17:44 2020 -0700
+
+    put the less general function below others
+
+commit 32b908790ddf5b3a9c354e8c52a839dfffcf32cc
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 14:12:12 2020 -0700
+
+    Add Home app draft
+
+commit 9969cf3b0034ba43cc5a7db8edaf93b895387c81
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 13:02:01 2020 -0700
+
+    Remove unused variable and functions
+
+commit 45990de03fff655ad43b391df9a896734d546186
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 12:57:45 2020 -0700
+
+    Add loading css
+
+commit bc5512db9ea0916f8bd5157bb40601c2569de7a6
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 01:53:02 2020 -0700
+
+    Wrap projects items that need left margin
+
+commit 7439640d5814fc64ee272a76b73cb302c7843347
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 01:35:19 2020 -0700
+
+    Minor style change
+
+commit 3571de34ed9208e83d59852ccc0b732dad1210f0
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 01:14:32 2020 -0700
+
+    Add test data
+
+commit e0d92c067ae1115fc3b272c80e7dbf767b19bde4
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sun Sep 6 01:14:06 2020 -0700
+
+    Hide empty list in entire skill
+
+commit 2c294cae98668aab41c142250cdf17bc65b030f3
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sat Sep 5 23:30:16 2020 -0700
+
+    Change Style with background
+
+commit 5ce9cecffdea1efea48a8f7e4f85ad7ed6d5745f
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sat Sep 5 20:18:43 2020 -0700
+
+    Change style
+
+commit 19512400c17fd3b297054c5b4e7e0277f92f31f8
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sat Sep 5 20:18:07 2020 -0700
+
+    Add skillwhole.hyml
+
+commit a0f09142710e4a08dfe7cd848aab408d60757aff
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sat Sep 5 19:01:10 2020 -0700
+
+    Add skills_whole page
+
+commit c44bd842e1951a379941bfab3b83838e4edcb973
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sat Sep 5 17:24:50 2020 -0700
+
+    Add two templates for sidebar item types in skill
+
+commit 074f36890682854ac29b93b7986dbb90ae2724c9
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sat Sep 5 17:24:10 2020 -0700
+
+    Remove base, home template in skills
+
+commit c987680121ec3a7d5003ae028995d2121581b529
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sat Sep 5 17:08:12 2020 -0700
+
+    Add url link in sidebar
+
+commit 5ddb1de3f4827f95454aa28a0625510bcf5f61a5
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sat Sep 5 17:03:27 2020 -0700
+
+    Add link to prjs and style to anchor tag
+
+commit 967ad3cebc6f447b39a604295650b496d2970e3d
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sat Sep 5 16:51:48 2020 -0700
+
+    Remove Test variable in prj and add the cache
+
+commit 0a764e1830febd2bd238b5387f28b5adc792f75e
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sat Sep 5 16:50:55 2020 -0700
+
+    Change test data
+
+commit 71d67bb84bf685cbb311e8302267030d898d58dc
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sat Sep 5 16:50:27 2020 -0700
+
+    Display skills field and Sidebar content
+
+commit c372399e045d39c1f6427e5820e496fd142d80fe
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sat Sep 5 15:00:53 2020 -0700
+
+    Change skill views, Add the cache to use category
+
+commit f41b3cfe0b097b0984d0d7f61c1a8705c804fbd1
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sat Sep 5 14:53:07 2020 -0700
+
+    Migrate due to manytomany btw category and skills, Change db due to change, add test data
+
+commit 3aa33394ae622c546f6c9d18e36372a0f70258cf
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sat Sep 5 14:51:03 2020 -0700
+
+    Add cache due to change admin, model for previous commit
+
+commit 897e8df0d5a0aafb3315d8fdfe2fd223740c6a64
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Sat Sep 5 14:49:53 2020 -0700
+
+    Change admin, model of skills to have manytomany with category
+
+commit 95dda4d78fcff14e7c485ad12afab5f03458dca3
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Fri Sep 4 22:34:43 2020 -0700
+
+    Change test date
+
+commit 36ab245e2c22a67f1495ba5d7403bf511a781af0
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Fri Sep 4 22:34:28 2020 -0700
+
+    Change Cache due to view change
+
+commit f8d0b755332e3aa8c35dfb89ef2a4085aee35151
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Fri Sep 4 22:33:42 2020 -0700
+
+    Change Category not to display mini prjs
+
+commit 393002afec3085b4cf20679a0ac4371a57e9cab9
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 19:08:31 2020 -0700
+
+    Add url for all displayed project in sidebar
+
+commit e7acbf4c8433f72821da371155b46461259e9f09
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 18:42:43 2020 -0700
+
+    Add tag to display file name
+
+commit 77b3bd80a0b78b4ec87e82a42b7ef484a872e92c
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 18:13:18 2020 -0700
+
+    Add Dynamic tag for file in Prj
+
+commit 389efedd765d91f635d77ea593a69521522d5757
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 18:05:11 2020 -0700
+
+    Add extra js acc func for File
+
+commit 0b2970acf918a7de383d34b110873641bdb3134c
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 17:47:04 2020 -0700
+
+    Remove link content from Acc code item
+
+commit 027d4f42c859a8752e427209ecb88ab1c3a480d0
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 17:45:17 2020 -0700
+
+    Change Background Color of class code
+    
+    to transparent
+
+commit afbb30e0fbefb27cef57052f8a57c3d1e4832cae
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 17:42:34 2020 -0700
+
+    Change code tag Line height to 1
+
+commit 509713f545a2bf52e416a92428df2d0c6991368e
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 17:40:49 2020 -0700
+
+    Remove padding for class code
+
+commit 2570e48c0684c5f32faac37c25fcf6482096732a
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 17:32:05 2020 -0700
+
+    Change code tag to pre-wrap
+
+commit f73bf1a4bfc5ae715429583f62f791dc974bebc5
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 17:01:16 2020 -0700
+
+    Add Dynamic Link tag for Prjs
+
+commit 56c7b1ab2fc1cda3f38b489e66c8310fed9dde3d
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 16:43:52 2020 -0700
+
+    Change django cache by new url setting
+
+commit 98f682f0ff19e04cca18c29bd9576069b25852eb
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 16:42:46 2020 -0700
+
+    Add Dynamic tag for Photo in Prj
+
+commit 6c74917288097e128a981e7a9dba80f1dc2bef03
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 16:37:21 2020 -0700
+
+    Add the repath for dev only use
+
+commit 5ace59bd8a261960880449e5aaf434c40ea44f1b
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 15:07:14 2020 -0700
+
+    Prj Template Dynamic tag and js for  Embedded
+
+commit 6ae4c8f169ebc880f030ba1f73b27536bff67b95
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 12:56:48 2020 -0700
+
+    Pass Embedded to Template
+
+commit cdff914bee048e54d0c4b6b1ffe04e2f30254a7c
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 01:12:02 2020 -0700
+
+    Reorder ACC design
+
+commit f78f0937b3d5fbf00e58f6c9bc2537f3f0d4b098
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 01:09:27 2020 -0700
+
+    Pass Foreignkey data
+    
+    In view, pass the foreign keys to model project as dictionaries
+
+commit 26ebf5d78a63f3d4cb6b4528b2cbae016aac462c
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 01:07:28 2020 -0700
+
+    Add test data
+    
+    Add test data for the spell-corrected model Embedded
+
+commit d1feaf78bff8a6fa9f67a9abde2b487510d4e3ac
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 00:08:15 2020 -0700
+
+    Migrate After Spelling Correction
+
+commit f6e3ca3cd3fb0b5462b4dfe2937be62271d505fb
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 00:06:18 2020 -0700
+
+    Correct Spelling of Embedded
+
+commit a9148aab2d2bab84519080671be16cfb21802083
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Thu Sep 3 00:02:44 2020 -0700
+
+    Add Motivation and Elaboration
+    
+    Add retrieved motivation and elaboration of project for the page
+    as the template tag snippet
+
+commit afd2f68aeff3e2bcb824895ecaffe1e766e67183
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 23:33:32 2020 -0700
+
+    Add Acc Design in Prj page
+
+commit 3b8e040411469b4834c70de0509885f45bb225f9
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 22:23:13 2020 -0700
+
+    Add more test date
+
+commit 7f1de028deb433390e389e4d2db2c11fa1e8b0bd
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 22:09:18 2020 -0700
+
+    Seperate date from skills, category
+
+commit c3866d19271dbd6ea166c349d7a59b1162044c07
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 21:34:56 2020 -0700
+
+    Upload test data
+
+commit 23816c3fe39e9e293ce1b6cf1307d319d7b02713
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 21:09:27 2020 -0700
+
+    Create SuperUser
+
+commit 7ce57c4254280fb656fddd8c017efa245048a7c7
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 21:07:12 2020 -0700
+
+    Migrate first time
+
+commit 29c15c7a47260209c26782bf6670ada451625c0b
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 21:03:57 2020 -0700
+
+    Make First Migrations
+
+commit e85f6e00871dc6447d565ef4cc70b9d3bcdf8e67
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 21:02:36 2020 -0700
+
+    Fix the app name
+    
+    project -> projects
+
+commit 141ebbc358bfb4d1efbe8ed99b7c44a84fdcfb59
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 21:01:15 2020 -0700
+
+    Include Apps in Setting
+
+commit 114796fd461045d058fb384231ab03cfd8ddf9fe
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 19:03:10 2020 -0700
+
+    Remove Filepathfields
+    
+    The object Photo has object photo that refers to the path.
+    Therefore, I remove the filepathfield is redundant.
+    The fielpathfield of the model File is moved for same reason.
+
+commit 0f067e73ed03ecffec2ec979a6cb83f7553b6fff
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 18:18:32 2020 -0700
+
+    Add templates for app skills
+
+commit 0366e8c61825585610957f658c2e80392ff6baba
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 18:17:50 2020 -0700
+
+    Model db for app skills
+
+commit 3a8d96a51e3c9629259fbae036da52766c75cbb7
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 18:16:46 2020 -0700
+
+    Render skill template in app skills
+
+commit 6fa49cba3a3fa518ad423f451b6c375787aa0087
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 18:15:48 2020 -0700
+
+    Let Admin to See data in App skills
+
+commit 7f2140d2023fec2764512777c490b54796166a5d
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 18:11:43 2020 -0700
+
+    Add template for Prj
+
+commit ac8e2f497e3db68948ead86d63fcb5ef953cc6d2
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 18:10:35 2020 -0700
+
+    Model Prj database
+    
+    the use of filepathfields for photo, file would be
+    re-considered before migration
+
+commit 5990e3dfbf3ed01cb97f47bb848dcadfeb2f90ca
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 18:08:30 2020 -0700
+
+    Set Dynamic at Rendering Prj
+
+commit 88359ddbcf0ef434b1f90fd8cb22f26e16c85647
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 18:04:00 2020 -0700
+
+    Admin to access All models in prj
+
+commit a4f349a383032ee8870f6fe90f67c6158d0d4b36
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 18:01:43 2020 -0700
+
+    Add super_base.html
+    
+    This html is for global use
+
+commit 70ca47084a0f9822223d0991240d0eef4ff10f8a
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 17:59:23 2020 -0700
+
+    Create home templates
+
+commit 7d5d0786c3b24247b487522d4982f7168e7893ca
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 17:58:06 2020 -0700
+
+    Create templatetags
+
+commit 8d06fd4818b77422ca59e1c84eb32a4109c6f130
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 17:56:37 2020 -0700
+
+    Create home view to home.html
+
+commit 2c6e8cae4b9bb2b14798cff15466f67179fea0ea
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 17:51:46 2020 -0700
+
+    Add basic static files
+    
+    * Add core.js
+    * Add styles.css
+    * Add a placeholder image
+
+commit e26adee29e8a833010a67002dec27d52dfe6438b
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 17:49:33 2020 -0700
+
+    Add media and inner dirs
+
+commit 42c83ff4b970dfdc3e2fd1d9baa49d51edb2fc14
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 17:46:19 2020 -0700
+
+    Change url.py
+    
+    * urlpatterns to have paths for all three apps
+    * add the comments from doc for dev environment
+
+commit c130275e20f5f6bcae32f87593f400c04e791940
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 17:40:33 2020 -0700
+
+    Add readme.txt
+
+commit 6f0a09451936ff850393ec9e404727be08181e50
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 17:37:49 2020 -0700
+
+    Set to Use Media in template
+    
+    Not sure if it's to display or for user-upload in template
+
+commit 81f0b4ad69eef954ce2c490d275a8085e53280c1
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 17:34:51 2020 -0700
+
+    Set Dir to global template
+    
+    templates/super_base.html will be used for all apps
+
+commit 8c4c7fe3f4a55e2b425036b25f017ea6db86b50f
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 17:30:51 2020 -0700
+
+    Set Media Root and URL
+
+commit 40b23ca14f3aad6e0fd359e8b02aab9168c8a064
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 17:28:29 2020 -0700
+
+    Set Directory to static
+
+commit c707b2cf1a89b701d8983f8c2319d3f47bfe69a7
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 17:20:14 2020 -0700
+
+    Remove .gitignore
+    
+    Move .gitignore from nishgreen/nishgreen to nishgreen
+
+commit 7add0ed6578ba66edae13f5c29e6ceb58cf898e8
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 17:18:17 2020 -0700
+
+    Remove Cached .DS_Store
+
+commit 320129e4f206565fc5c5cb4954756e759d7b8660
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 17:14:02 2020 -0700
+
+    Move .gitignore
+    
+    The .gitignore was inside a folder(nishgreen)
+    So I move it to the project folder(nishgreen)
+
+commit d128040beb8fded638b0457ecdf27ed76ad64213
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 16:53:45 2020 -0700
+
+    Add .gitignore
+    * Ignore DS_store
+    * Ignore zip, zg files
+
+commit d891218979b1a966dedb21b2efc08b2409cffc23
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 16:23:49 2020 -0700
+
+    Create Three Apps
+    * startapp home
+    * startapp projects
+    * startapp skills
+
+commit 02a87432fe285e9aef4860749aa7848865c7f111
+Author: Luke Yoo <lukeyoo@g.ucla.edu>
+Date:   Wed Sep 2 16:21:11 2020 -0700
+
+    Create Project
