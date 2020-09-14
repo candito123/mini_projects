@@ -1,0 +1,76 @@
+{% extends "super_base.html" %}
+{% load static %}
+
+{% block sidebar_items %}
+    <a href="{% url 'skills'%}" class="bar-item button">
+        categorize skills
+    </a>
+    {% for ski in skill_set %}
+    <a href="#" class="bar-item button">{{ski.name}}</a>
+    {% endfor %}
+{% endblock %}
+
+{% block container %}
+    <div class="main darkForest" style="margin-left:200px">
+        <div class="timberwolf">
+            <div class="container">
+                <h1>Skill Set
+                    <div class="tiny right margin-right-10">To have a (technical) skill, it requires at least:
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            1. one relavant college course or a course-like material such as a series of a video.
+                        <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            2. one mini project, which is small-scale, introductory, or a part of a complete project.
+                    </div>
+                </h1>
+            </div>
+        </div>
+        {% for ski in skill_set %}
+        <div class="border-bottom-top-timberwolf">
+            <div class="container">
+                <h3>{{ski.name}}
+                </h3>
+            </div>
+        </div>
+            <div class="container">
+                    <div>
+                        <p>
+                            Course(s):
+                            {{skill.course}}
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <p class = "p-hide-empty-link">
+                            Mini project(s):
+                            {% for prj in ski.project_set.all %}
+                                {% if prj.is_mini %}
+                                    <a href="{% url 'projects' prj.id %}" class = "may-empty">{{ prj.name }}&nbsp</a>
+                                {% endif %}
+                            {% endfor %}
+                        </p>
+                        <p class = "p-hide-empty-link">
+                            Project(s):
+                            {% for prj in ski.project_set.all %}
+                                {% if not prj.is_mini %}
+                                    <a href="{% url 'projects' prj.id %}" class = "may-empty">{{ prj.name }}&nbsp</a>
+                                {% endif %}
+                            {% endfor %}
+                        </p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <script>
+            document.getElementById("toSkills").classList.add("active");
+            var mayEmptyInside = document.querySelectorAll(".p-hide-empty-link");
+            for (var i=0; i<mayEmptyInside.length; i++){
+                if (mayEmptyInside[i].querySelector(".may-empty")==null)
+                {
+                    mayEmptyInside[i].classList.add("hide")
+                }
+            }
+        </script>
+
+{% endblock %}
